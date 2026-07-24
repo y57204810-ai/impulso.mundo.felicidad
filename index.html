@@ -3,45 +3,138 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IMPULSO</title>
+<title>Impulso Mundo Felicidad</title>
 
 <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 
-<header class="hero">
-<nav>
-<div class="logo">IMPULSO</div>
-<ul>
-<li><a href="#inicio">Inicio</a></li>
-<li><a href="#destinos">Destinos</a></li>
-<li><a href="#beneficios">Beneficios</a></li>
-<li><a href="#contacto">Contacto</a></li>
-</ul>
-</nav>
-
-<div class="hero-content">
-<h1>Viaja más. Vive más.</h1>
-<p>Vacaciones, hoteles, actividades y promociones exclusivas.</p>
-
-<a href="#destinos" class="btn">Explorar</a>
-<a href="#contacto" class="btn2">Afiliar Empresa</a>
-</div>
+<header>
+<h1>IMPULSO MUNDO FELICIDAD</h1>
+<p>Conectando viajeros, hoteles y experiencias inolvidables.</p>
+<a href="#destinos" class="boton">Explorar</a>
 </header>
 
-<section id="contacto">
-<h2>Contáctanos</h2>
-<p>Estamos listos para ayudarte.</p>
+<section id="destinos">
+<h2>Destinos</h2>
 
-<a href="https://wa.me/" class="btn">Escríbenos por WhatsApp</a>
+<div class="tarjetas">
+
+<div class="tarjeta">
+<img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=900" alt="Dubái">
+<h3>Dubái</h3>
+</div>
+
+<div class="tarjeta">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900" alt="Francia">
+<h3>Francia</h3>
+</div>
+
+<div class="tarjeta">
+<img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5ce?w=900" alt="China">
+<h3>China</h3>
+</div>
+
+<div class="tarjeta">
+<img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=900" alt="Rusia">
+<h3>Rusia</h3>
+</div>
+
+</div>
 </section>
 
 <footer>
-<h3>IMPULSO</h3>
-<p>Vacaciones • Beneficios • Empresas Afiliadas</p>
-<p>© 2026 Todos los derechos reservados.</p>
+<p>© 2026 Impulso Mundo Felicidad</p>
 </footer>
 
 </body>
-</html>
+</html>*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600") center/cover no-repeat;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+header h1{
+    font-size:3rem;
+    text-shadow:2px 2px 8px rgba(0,0,0,.6);
+}
+
+header p{
+    font-size:1.3rem;
+    margin:20px 0;
+    text-shadow:2px 2px 8px rgba(0,0,0,.6);
+}
+
+.boton{
+    background:#00a86b;
+    color:white;
+    padding:15px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section{
+    padding:60px 20px;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2rem;
+}
+
+.tarjetas{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.tarjeta{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.tarjeta:hover{
+    transform:translateY(-8px);
+}
+
+.tarjeta img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.tarjeta h3{
+    padding:20px;
+    text-align:center;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
