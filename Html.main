@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impulso</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>IMPULSO</h1>
+  <p>Impulsando ideas hacia el éxito.</p>
+</header>
+
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="inicio">
+  <h2>Bienvenido</h2>
+  <p>Desarrollamos soluciones digitales para emprendedores y empresas.</p>
+</section>
+
+<section id="servicios">
+  <h2>Servicios</h2>
+  <div class="card">
+    <h3>Diseño Web</h3>
+    <p>Páginas modernas y responsivas.</p>
+  </div>
+  <div class="card">
+    <h3>Marketing Digital</h3>
+    <p>Haz crecer tu negocio en internet.</p>
+  </div>
+  <div class="card">
+    <h3>Desarrollo de Software</h3>
+    <p>Soluciones a la medida.</p>
+  </div>
+</section>
+
+<section id="nosotros">
+  <h2>Sobre Nosotros</h2>
+  <p>En Impulso ayudamos a transformar ideas en proyectos exitosos.</p>
+</section>
+
+<section id="contacto">
+  <h2>Contáctanos</h2>
+  <form>
+    <input type="text" placeholder="Nombre" required>
+    <input type="email" placeholder="Correo" required>
+    <textarea placeholder="Mensaje"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Impulso. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+}
+
+header{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:50px;
+}
+
+nav{
+    background:#222;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+}
+
+section{
+    padding:40px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:20px 0;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    max-width:500px;
+}
+
+input,textarea{
+    margin:10px 0;
+    padding:10px;
+}
+
+button{
+    background:#0d6efd;
+    color:white;
+    border:none;
+    padding:12px;
+    cursor:pointer;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
