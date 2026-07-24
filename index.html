@@ -1,125 +1,284 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Impulso</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Impulso | Vacaciones, Beneficios y Afiliaciones</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<header>
-  <h1>IMPULSO</h1>
-  <p>Impulsando ideas hacia el éxito.</p>
-</header>
+<header class="hero">
 
 <nav>
-  <a href="#inicio">Inicio</a>
-  <a href="#servicios">Servicios</a>
-  <a href="#nosotros">Nosotros</a>
-  <a href="#contacto">Contacto</a>
+
+<div class="logo">IMPULSO</div>
+
+<ul>
+
+<li><a href="#inicio">Inicio</a></li>
+
+<li><a href="#beneficios">Beneficios</a></li>
+
+<li><a href="#empresas">Empresas</a></li>
+
+<li><a href="#contacto">Contacto</a></li>
+
+</ul>
+
 </nav>
 
-<section id="inicio">
-  <h2>Bienvenido</h2>
-  <p>Desarrollamos soluciones digitales para emprendedores y empresas.</p>
+<div class="hero-content">
+
+<h1>Convierte tus sueños en experiencias inolvidables</h1>
+
+<p>
+Viajes, vacaciones, descuentos exclusivos y oportunidades para empresas afiliadas.
+</p>
+
+<a href="#empresas" class="btn">Afiliar mi empresa</a>
+
+<a href="#beneficios" class="btn2">Conocer beneficios</a>
+
+</div>
+
+</header>
+
+<section id="beneficios" class="cards">
+
+<h2>¿Por qué elegir Impulso?</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>🏖 Vacaciones</h3>
+
+<p>Accede a destinos increíbles para disfrutar con tu familia.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🏔 Aventuras</h3>
+
+<p>Montaña, playa, excursiones y experiencias inolvidables.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🤝 Empresas</h3>
+
+<p>Afiliamos empresas para brindar beneficios exclusivos a sus colaboradores.</p>
+
+</div>
+
+</div>
+
+</section><section id="empresas" class="empresas">
+
+    <h2>Afilia tu Empresa</h2>
+
+    <p class="subtitulo">
+        Únete a Impulso y ofrece a tus colaboradores beneficios exclusivos,
+        viajes, descuentos y experiencias inolvidables.
+    </p>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>📄 Documentos Digitales</h3>
+            <p>Descarga el kit de afiliación y conoce todos los beneficios.</p>
+            <a href="#" class="btn">Descargar</a>
+        </div>
+
+        <div class="card">
+            <h3>💼 Beneficios Empresariales</h3>
+            <p>Programas especiales para empresas de todos los tamaños.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌎 Cobertura</h3>
+            <p>Viajes, hoteles, actividades y promociones exclusivas.</p>
+        </div>
+
+    </div>
+
 </section>
 
-<section id="servicios">
-  <h2>Servicios</h2>
-  <div class="card">
-    <h3>Diseño Web</h3>
-    <p>Páginas modernas y responsivas.</p>
-  </div>
-  <div class="card">
-    <h3>Marketing Digital</h3>
-    <p>Haz crecer tu negocio en internet.</p>
-  </div>
-  <div class="card">
-    <h3>Desarrollo de Software</h3>
-    <p>Soluciones a la medida.</p>
-  </div>
-</section>
+<section id="contacto" class="contacto">
 
-<section id="nosotros">
-  <h2>Sobre Nosotros</h2>
-  <p>En Impulso ayudamos a transformar ideas en proyectos exitosos.</p>
-</section>
+    <h2>Contáctanos</h2>
 
-<section id="contacto">
-  <h2>Contáctanos</h2>
-  <form>
-    <input type="text" placeholder="Nombre" required>
-    <input type="email" placeholder="Correo" required>
-    <textarea placeholder="Mensaje"></textarea>
-    <button type="submit">Enviar</button>
-  </form>
+    <p>Estamos listos para ayudarte.</p>
+
+    <a class="btn" href="https://wa.me/TUNUMERO">
+        Escríbenos por WhatsApp
+    </a>
+
 </section>
 
 <footer>
-  <p>© 2026 Impulso. Todos los derechos reservados.</p>
+
+    <h3>IMPULSO</h3>
+
+    <p>Vacaciones • Beneficios • Empresas Afiliadas</p>
+
+    <p>© 2026 Todos los derechos reservados.</p>
+
 </footer>
 
+<script src="script.js"></script>
+
 </body>
-</html>body{
+  </html>*{
     margin:0;
-    font-family:Arial,sans-serif;
-    background:#f4f4f4;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
-header{
-    background:#0d6efd;
-    color:white;
-    text-align:center;
-    padding:50px;
+body{
+    background:#f5f8fc;
+    color:#222;
+}
+
+.hero{
+    min-height:100vh;
+    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    color:#fff;
 }
 
 nav{
-    background:#222;
-    text-align:center;
-    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 10%;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
 }
 
 nav a{
-    color:white;
+    color:#fff;
     text-decoration:none;
-    margin:15px;
+    font-weight:600;
 }
 
-section{
-    padding:40px;
+.logo{
+    font-size:30px;
+    font-weight:800;
+}
+
+.hero-content{
+    text-align:center;
+    padding:140px 20px;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    max-width:700px;
+    margin:auto;
+}
+
+.btn,.btn2{
+    display:inline-block;
+    margin:20px 10px;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn{
+    background:#ff9800;
+    color:#fff;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+.btn2{
+    background:#fff;
+    color:#0066cc;
+}
+
+.cards,
+.empresas,
+.contacto{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+    margin-top:40px;
 }
 
 .card{
-    background:white;
-    padding:20px;
-    margin:20px 0;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,.1);
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+    transition:.3s;
 }
 
-form{
-    display:flex;
-    flex-direction:column;
-    max-width:500px;
-}
-
-input,textarea{
-    margin:10px 0;
-    padding:10px;
-}
-
-button{
-    background:#0d6efd;
-    color:white;
-    border:none;
-    padding:12px;
-    cursor:pointer;
+.card:hover{
+    transform:translateY(-10px);
 }
 
 footer{
-    background:#222;
+    background:#0d1b2a;
     color:white;
     text-align:center;
-    padding:20px;
+    padding:40px;
+}// Animación al hacer scroll
+const cards = document.querySelectorAll(".card");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = "1";
+      entry.target.style.transform = "translateY(0)";
+    }
+  });
+});
+
+cards.forEach(card => {
+  card.style.opacity = "0";
+  card.style.transform = "translateY(40px)";
+  card.style.transition = "all 0.6s ease";
+  observer.observe(card);
+});
+
+// Mensaje al hacer clic en el botón de afiliación
+const boton = document.querySelector(".btn");
+
+if (boton) {
+  boton.addEventListener("click", () => {
+    console.log("¡Gracias por tu interés en Impulso!");
+  });
 }
